@@ -21,7 +21,7 @@ class PaymentController {
         return $payment_info;
     }
 
-    public static function generetePayment($customer, $unit_price, $quantity, $title, $external_reference){
+    public static function generetePayment($unit_price, $quantity, $title, $external_reference){
         MercadoPago\SDK::setAccessToken($_ENV['ACCESS_TOKEN']);
         $preference = new MercadoPago\Preference();
         $item = new MercadoPago\Item();

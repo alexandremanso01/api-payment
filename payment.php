@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ];
             $customer_create = CustomerController::create($customer);
             if($customer_create){
-                PaymentController::generetePayment($customer, 1.00, 1, 'Consultoria', $external_reference);
+                PaymentController::generetePayment(1.00, 1, 'Consultoria', $external_reference);
             }else{
                 var_dump($customer_create);
                 exit;
