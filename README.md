@@ -4,14 +4,12 @@
 ## Pré-requisitos
 
 
-
 PHP >= 7.4
 
 Mysql >= 5.4
 
 
 ## Clone o Projeto no diretorio raiz do servidor de Hospedagem
-
 
 <pre class="line-numbers language-php" tabindex="0">          <code id="code_1" class="language-php">
 gh repo clone alexandremanso01/api-payment</span></code></pre>
@@ -34,10 +32,6 @@ Instale o SDK oficial do Mercado Pago para simplificar a integração com as nos
 
 Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando o [Composer](https://getcomposer.org/download):
 
-<pre class="line-numbers language-php" tabindex="0">          <code id="code_1" class="language-php">
-php composer<span class="token operator">.</span>phar <span class="token keyword">require</span> <span class="token string double-quoted-string">"mercadopago/dx-php"</span></code></pre>
-
-
 
 ### 3. Obtenha suas credenciais
 
@@ -49,7 +43,6 @@ Para encontrá-las, veja a [seção de Credenciais](https://www.mercadopago.com.
 ### 4. Configure o arquivo .env
 
 Renomeie o arquivo .env.example para .env e configure as variaveis de acordo com as credenciais do servidor de banco de dados e as credenciais criadas no painel do Mercado Pago
-
 
 
 # Webhooks - Atualizações de status de pagamento
